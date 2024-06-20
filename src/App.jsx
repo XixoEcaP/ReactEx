@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from './components/Main';
 import Portfolio from './components/Portfolio';
-import ToDoApp from './components/toDoList/App'; // Ensure this is the correct import path for your To-Do List component
+import ToDoApp from './components/toDoList/App';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ReactEx">
       <div className="App">
         <Routes>
           <Route path="/" element={<Main />} />
@@ -20,5 +20,7 @@ function App() {
 }
 
 export default App;
+
+
 
 
